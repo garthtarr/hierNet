@@ -345,7 +345,7 @@ void ggdescent(double *x, int n, int p, double *zz, int diagonal, double *y,
     ggstep(x, n, p, zz, diagonal, y, lamL1, lamL2, rho, V, curth, curbp, curbn, tt, backtrack, th, bp, bn, &ttaken, &maxabsdel);
     if (maxabsdel < tol) {
       // note: don't need to update (curth,curbp,curbn)
-      Rprintf("GG converged in %d iterations.\n", l+1);
+      // Rprintf("GG converged in %d iterations.\n", l+1);
       break;
     }
     if (l < maxiter - 1) {
